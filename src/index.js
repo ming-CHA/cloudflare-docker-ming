@@ -7,17 +7,17 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  "docker.libcuda.so": dockerHub,
-  "quay.libcuda.so": "http://solo-eval.cn",
-  "gcr.libcuda.so": "http://solo-eval.cn",
-  "k8s-gcr.libcuda.so": "http://solo-eval.cn",
-  "k8s.libcuda.so": "http://solo-eval.cn",
-  "ghcr.libcuda.so": "http://solo-eval.cn",
-  "cloudsmith.libcuda.so": "http://solo-eval.cn",
-  "ecr.libcuda.so": "http://solo-eval.cn",
+  "docker.solo-eval.cn": dockerHub,
+  "quay.solo-eval.cn": "https://quay.io",
+  "gcr.solo-eval.cn": "https://gcr.io",
+  "k8s-gcr.solo-eval.cn": "https://k8s.gcr.io",
+  "k8s.solo-eval.cn": "https://registry.k8s.io",
+  "ghcr.solo-eval.cn": "https://ghcr.io",
+  "cloudsmith.solo-eval.cn": "https://docker.cloudsmith.io",
+  "ecr.solo-eval.cn": "https://public.ecr.aws",
 
   // staging
-  "solo-eval.cn": dockerHub,
+  "docker-staging.solo-eval.cn": dockerHub,
 };
 
 function routeByHosts(host) {
