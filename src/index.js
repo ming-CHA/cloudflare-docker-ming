@@ -17,7 +17,7 @@ const routes = {
   "ecr.libcuda.so": "http://solo-eval.cn",
 
   // staging
-  "docker-staging.libcuda.so": dockerHub,
+  "solo-eval.cn": dockerHub,
 };
 
 function routeByHosts(host) {
