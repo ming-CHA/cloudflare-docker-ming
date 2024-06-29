@@ -13,13 +13,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 # routes = [
-#   { pattern = "solo-eval.cn", custom_domain = true },
-#   { pattern = "solo-eval.cn", custom_domain = true },
-#   { pattern = "solo-eval.cn", custom_domain = true },
-#   { pattern = "solo-eval.cn", custom_domain = true },
-#   { pattern = "solo-eval.cn", custom_domain = true },
-#   { pattern = "solo-eval.cn", custom_domain = true },
-#   { pattern = "solo-eval.cn", custom_domain = true },
+#   { pattern = "docker.solo-eval.cn", custom_domain = true },
+#   { pattern = "quay.solo-eval.cn", custom_domain = true },
+#   { pattern = "gcr.solo-eval.cn", custom_domain = true },
+#   { pattern = "k8s-gcr.solo-eval.cn", custom_domain = true },
+#   { pattern = "k8s.solo-eval.cn", custom_domain = true },
+#   { pattern = "ghcr.solo-eval.cn", custom_domain = true },
+#   { pattern = "cloudsmith.solo-eval.cn", custom_domain = true },
 # ]
 
 [env.production.vars]
@@ -28,7 +28,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.libcuda.so", custom_domain = true }
+# route = { pattern = "docker-staging.solo-eval.cn", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
